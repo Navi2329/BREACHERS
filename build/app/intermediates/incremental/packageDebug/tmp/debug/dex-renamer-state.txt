@@ -1,0 +1,4 @@
+#Sat Oct 07 12:29:10 IST 2023
+base.0=/home/godwildbeast/Desktop/vit materials/flutter/societysync/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

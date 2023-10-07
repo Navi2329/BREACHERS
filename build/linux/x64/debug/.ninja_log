@@ -1,0 +1,29 @@
+# ninja log v5
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/libflutter_linux_gtk.so	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_engine.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_value.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/fl_view.h	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	7412fa26e85a46b1
+3	50937	0	flutter/_phony_	7412fa26e85a46b1
+3	50937	0	/home/godwildbeast/Desktop/vit materials/flutter/societysync/build/linux/x64/debug/flutter/_phony_	7412fa26e85a46b1
+50940	54073	1696661362697779644	CMakeFiles/societysync.dir/main.cc.o	dc928d6c3dea000
+50962	54131	1696661362765778917	CMakeFiles/societysync.dir/flutter/generated_plugin_registrant.cc.o	37d12831aab5c74c
+50960	54351	1696661362976776659	CMakeFiles/societysync.dir/my_application.cc.o	370d83ecdcdf3c71
+54353	55162	1696661363801767840	intermediates_do_not_run/societysync	562b48c230cc427f
+55162	55257	0	CMakeFiles/install.util	70d4bda60b2489a2
