@@ -186,9 +186,9 @@ class AnnouncementDetails extends StatelessWidget {
                 style: const TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 10),
-              Text(
+              const Text(
                 'Price: \$₹{announcement.price.toStringAsFixed(2)}',
-                style: const TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 10),
               Text(

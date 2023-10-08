@@ -39,7 +39,8 @@ class UserProfileScreen extends ConsumerWidget {
                         ),
                         Container(
                           alignment: Alignment.bottomLeft,
-                          padding: const EdgeInsets.all(20).copyWith(bottom: 70),
+                          padding:
+                              const EdgeInsets.all(20).copyWith(bottom: 70),
                           child: CircleAvatar(
                             backgroundImage: NetworkImage(user.profilePic),
                             radius: 45,
@@ -54,7 +55,8 @@ class UserProfileScreen extends ConsumerWidget {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),
-                              padding: const EdgeInsets.symmetric(horizontal: 25),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 25),
                             ),
                             child: const Text('Edit Profile'),
                           ),
@@ -82,7 +84,7 @@ class UserProfileScreen extends ConsumerWidget {
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
                             child: Text(
-                              '${user.karma} karma',
+                              '${user.syncs} syncs',
                             ),
                           ),
                           const SizedBox(height: 10),
