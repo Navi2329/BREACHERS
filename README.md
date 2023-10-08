@@ -1,16 +1,8 @@
-# societysync_15fc8
+## Society Sync
 
-A new Flutter project.
+People are looking for a seamless platform in the current digital era that blends the social connectivity of a social media app with the practicality of buy and sell style classifieds. While traditional classified services lack the social involvement component, existing social networks lack effective buying and selling tools. Users who want to engage with people while conducting transactions miss out on chances as a result of this gap. A complete solution that fills in this gap and offers a user-friendly interface for both social interactions and online shopping is obviously needed.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+For testing APK LINK:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://drive.google.com/file/d/1MVuNzWz8JHP7i7buYTdM82pbUjd55cTY/view?usp=sharing
