@@ -5,8 +5,8 @@ class UserModel {
   final String profilePic;
   final String banner;
   final String uid;
-  final bool isAuthenticated; 
-  final int karma;
+  final bool isAuthenticated;
+  final int syncs;
   final List<String> awards;
   UserModel({
     required this.name,
@@ -14,7 +14,7 @@ class UserModel {
     required this.banner,
     required this.uid,
     required this.isAuthenticated,
-    required this.karma,
+    required this.syncs,
     required this.awards,
   });
 
@@ -24,7 +24,7 @@ class UserModel {
     String? banner,
     String? uid,
     bool? isAuthenticated,
-    int? karma,
+    int? syncs,
     List<String>? awards,
   }) {
     return UserModel(
@@ -33,7 +33,7 @@ class UserModel {
       banner: banner ?? this.banner,
       uid: uid ?? this.uid,
       isAuthenticated: isAuthenticated ?? this.isAuthenticated,
-      karma: karma ?? this.karma,
+      syncs: syncs ?? this.syncs,
       awards: awards ?? this.awards,
     );
   }
@@ -45,7 +45,7 @@ class UserModel {
       'banner': banner,
       'uid': uid,
       'isAuthenticated': isAuthenticated,
-      'karma': karma,
+      'syncs': syncs,
       'awards': awards,
     };
   }
@@ -57,14 +57,14 @@ class UserModel {
       banner: map['banner'] ?? '',
       uid: map['uid'] ?? '',
       isAuthenticated: map['isAuthenticated'] ?? false,
-      karma: map['karma']?.toInt() ?? 0,
+      syncs: map['syncs']?.toInt() ?? 0,
       awards: List<String>.from(map['awards']),
     );
   }
 
   @override
   String toString() {
-    return 'UserModel(name: $name, profilePic: $profilePic, banner: $banner, uid: $uid, isAuthenticated: $isAuthenticated, karma: $karma, awards: $awards)';
+    return 'UserModel(name: $name, profilePic: $profilePic, banner: $banner, uid: $uid, isAuthenticated: $isAuthenticated, syncs: $syncs, awards: $awards)';
   }
 
   @override
@@ -77,7 +77,7 @@ class UserModel {
         other.banner == banner &&
         other.uid == uid &&
         other.isAuthenticated == isAuthenticated &&
-        other.karma == karma &&
+        other.syncs == syncs &&
         listEquals(other.awards, awards);
   }
 
@@ -88,7 +88,7 @@ class UserModel {
         banner.hashCode ^
         uid.hashCode ^
         isAuthenticated.hashCode ^
-        karma.hashCode ^
+        syncs.hashCode ^
         awards.hashCode;
   }
 }

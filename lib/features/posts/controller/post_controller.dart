@@ -13,7 +13,8 @@ import 'package:societysync/models/post.dart';
 import 'package:societysync/models/society.dart';
 import 'package:uuid/uuid.dart';
 
-final postControllerProvider = StateNotifierProvider<PostController, bool>((ref) {
+final postControllerProvider =
+    StateNotifierProvider<PostController, bool>((ref) {
   final postRepository = ref.watch(postRepositoryProvider);
   final storageRepository = ref.watch(storageRepositoryProvider);
   return PostController(
@@ -83,7 +84,9 @@ class PostController extends StateNotifier<bool> {
     );
 
     final res = await _postRepository.addPost(post);
-    _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.textPost);
+    _ref
+        .read(userProfileControllerProvider.notifier)
+        .updateUsersyncs(Usersyncs.textPost);
     state = false;
     res.fold((l) => showSnackBar(context, l.message), (r) {
       showSnackBar(context, 'Posted successfully!');
@@ -118,7 +121,9 @@ class PostController extends StateNotifier<bool> {
     );
 
     final res = await _postRepository.addPost(post);
-    _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.linkPost);
+    _ref
+        .read(userProfileControllerProvider.notifier)
+        .updateUsersyncs(Usersyncs.linkPost);
     state = false;
     res.fold((l) => showSnackBar(context, l.message), (r) {
       showSnackBar(context, 'Posted successfully!');
@@ -161,7 +166,9 @@ class PostController extends StateNotifier<bool> {
       );
 
       final res = await _postRepository.addPost(post);
-      _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.imagePost);
+      _ref
+          .read(userProfileControllerProvider.notifier)
+          .updateUsersyncs(Usersyncs.imagePost);
       state = false;
       res.fold((l) => showSnackBar(context, l.message), (r) {
         showSnackBar(context, 'Posted successfully!');
@@ -183,8 +190,11 @@ class PostController extends StateNotifier<bool> {
 
   void deletePost(Post post, BuildContext context) async {
     final res = await _postRepository.deletePost(post);
-    _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.deletePost);
-    res.fold((l) => null, (r) => showSnackBar(context, 'Post Deleted successfully!'));
+    _ref
+        .read(userProfileControllerProvider.notifier)
+        .updateUsersyncs(Usersyncs.deletePost);
+    res.fold((l) => null,
+        (r) => showSnackBar(context, 'Post Deleted successfully!'));
   }
 
   void upvote(Post post) async {
@@ -217,7 +227,9 @@ class PostController extends StateNotifier<bool> {
       profilePic: user.profilePic,
     );
     final res = await _postRepository.addComment(comment);
-    _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.comment);
+    _ref
+        .read(userProfileControllerProvider.notifier)
+        .updateUsersyncs(Usersyncs.comment);
     res.fold((l) => showSnackBar(context, l.message), (r) => null);
   }
 
@@ -231,7 +243,9 @@ class PostController extends StateNotifier<bool> {
     final res = await _postRepository.awardPost(post, award, user.uid);
 
     res.fold((l) => showSnackBar(context, l.message), (r) {
-      _ref.read(userProfileControllerProvider.notifier).updateUserKarma(UserKarma.awardPost);
+      _ref
+          .read(userProfileControllerProvider.notifier)
+          .updateUsersyncs(Usersyncs.awardPost);
       _ref.read(userProvider.notifier).update((state) {
         state?.awards.remove(award);
         return state;

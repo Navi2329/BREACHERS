@@ -10,7 +10,6 @@ import 'package:societysync/features/societies/screens/creation.dart';
 import 'package:societysync/features/societies/screens/edit.dart';
 import 'package:societysync/features/societies/screens/mod.dart';
 import 'package:societysync/features/societies/screens/society_screen.dart';
-import 'package:societysync/screens/comments.dart';
 import 'package:societysync/features/home/screens/home.dart';
 import 'package:societysync/features/auth/screens/login.dart';
 
@@ -21,7 +20,6 @@ final loggedOutRoute = RouteMap(routes: {
 final loggedInRoute = RouteMap(routes: {
   '/': (_) => const MaterialPage(child: HomeScreen()),
   '/create-Society': (_) => const MaterialPage(child: Createsociety()),
-  '/comments': (_) => const MaterialPage(child: CommentSection()),
    '/r/:name': (route) => MaterialPage(
           child: SocietyScreen(
             name: route.pathParameters['name']!,

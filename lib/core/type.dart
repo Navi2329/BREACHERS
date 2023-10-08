@@ -31,7 +31,7 @@ enum ThemeMode {
   dark,
 }
 
-enum UserKarma {
+enum Usersyncs {
   comment(1),
   textPost(2),
   linkPost(3),
@@ -39,6 +39,6 @@ enum UserKarma {
   awardPost(5),
   deletePost(-1);
 
-  final int karma;
-  const UserKarma(this.karma);
+  final int syncs;
+  const Usersyncs(this.syncs);
 }
