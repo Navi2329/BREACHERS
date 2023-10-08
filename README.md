@@ -6,3 +6,7 @@ People are looking for a seamless platform in the current digital era that blend
 For testing APK LINK:
 
 https://drive.google.com/file/d/1MVuNzWz8JHP7i7buYTdM82pbUjd55cTY/view?usp=sharing
+
+Demo video Link:
+
+https://vimeo.com/872329211?share=copy
